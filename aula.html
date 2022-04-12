@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12/04/2022</title>
+</head>
+
+<body>
+    Frase: <input onkeydown="verificar_frase()" id="input_frase">
+    <br>
+    Tamanho do Texto :<span id="span_tamanho_texto">0</span>
+    <br>
+    Primeira Letra: <span id="span_primeira_letra"></span>
+    <br>
+    Última Letra: <span id="span_ultima_letra"></span>
+    <br>
+    Email válido: <span id="span_tem_arroba">Não</span>
+    <br>
+    Começa com a? <span id="span_comeca_correto">Não</span>
+    <br>
+    Termina com .com.br? <span id="span_termina_correto">Não</span>
+    <br>
+    Frase, em minúsculo: <span id="frase_minusculo"></span>
+    <br>
+    Frase em maíusculo: <span id="frase_maiusculo"></span>
+
+
+</body>
+
+</html>
+
+<script>
+
+
+    function verificar_frase() {
+        var frase = input_frase.value
+        span_tamanho_texto.innerHTML =
+            input_frase.value.length
+        span_primeira_letra.innerHTML = frase[0]
+        span_ultima_letra.innerHTML = frase[frase.length -1]
+    }
+
+
+
+</script>
